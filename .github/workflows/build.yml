@@ -23,7 +23,8 @@ jobs:
 
       - name: Build cTrader bot
         run: dotnet build GoldSniperX.csproj --configuration Release -p:AlgoBuild=true -p:AlgoPublish=false
-
+      - name: Find compiled cBot
+        run: find . -name "*.algo" -type f
       - name: Save compiled cBot
         uses: actions/upload-artifact@v4
         with:
