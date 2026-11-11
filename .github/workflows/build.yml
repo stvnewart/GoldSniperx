@@ -29,5 +29,5 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: GoldSniperX-algo
-        path: '**/*.algo'   
+          path: '**/*.algo'   
           if-no-files-found: error
